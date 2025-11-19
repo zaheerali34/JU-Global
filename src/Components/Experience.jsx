@@ -33,7 +33,7 @@ const data = [
 
 function Experience() {
   return (
-    <div className="w-full h-screen max-lg:h-full py-20 px-4 bg-gradient-to-b from-blue-700 to-blue-600 flex flex-col items-center">
+    <div className="w-full h-screen max-lg:h-full py-20 px-4 bg-linear-to-b from-blue-700 to-blue-600 flex flex-col items-center">
       
       <h1 className="text-4xl font-bold text-white text-center">
         PROVEN EXPERIENCE
