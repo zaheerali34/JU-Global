@@ -3,7 +3,7 @@ import HomeImg from '/1.webp';
 
 function Home() {
   return (
-    <div className='w-full h-screen py-24 flex items-center justify-center gap-6 max-lg:flex-col max-lg:h-full'>
+    <div className='w-full h-screen px-24 max-xl:px-12 max-lg:px-6 py-24 flex items-center justify-center gap-6 max-lg:flex-col max-lg:h-full'>
         <div className='w-2/4 max-lg:w-full flex flex-col items-start gap-5'>
             <span className='bg-[#DBEAFE] rounded-full py-2 px-6 text-[#1E40AF] font-semibold text-[0.9rem]'>Global Vision · China Resources · Efficient Connection</span>
             <h1 className='text-[3.5rem] font-bold leading-15 max-xl:text-[2.5rem] max-xl:leading-10'>Your Trusted Partner for China Sourcing & Trade</h1>

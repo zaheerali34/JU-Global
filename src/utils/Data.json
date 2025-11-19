@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "International Trade (Buying Agent Service)",
+    "description": "Complete sourcing and procurement services connecting you with verified Chinese manufacturers. We handle product sourcing, supplier negotiation, sample coordination, order management, quality inspection, and export logistics.",
+    "imageOne": "/one.jpeg",
+    "imageTwo": "/01.jpg",
+    "layout": "left"
+  },
+
+  {
+    "id": 2,
+    "title": "B2B Business Matching & Exhibition Services",
+    "description": "Professional support for major trade shows including Canton Fair, CIIE (China International Import Expo), and Digital Trade Expo. Services include pre-show planning, on-site translation, booth management, business matchmaking, and post-show follow-up.",
+    "imageOne": "/three.webp",
+    "imageTwo": "/03.webp",
+    "layout": "right"
+  },
+
+  {
+    "id": 3,
+    "title": "Factory Sourcing & Consulting",
+    "description": "Access our extensive network of pre-vetted factories across China. We conduct thorough verification including business licenses, production capacity assessment, quality control systems, and compliance checks to ensure you work with reliable manufacturers.",
+    "imageOne": "/two.jpeg",
+    "imageTwo": "/02.webp",
+    "layout": "left"
+  },
+
+  {
+    "id": 4,
+    "title": "Translation, Visa & Local Support",
+    "description": "Multilingual team providing translation services, visa assistance, local transportation, accommodation arrangements, and cultural guidance to ensure smooth business operations in China.",
+    "imageOne": "/four.jpeg",
+    "imageTwo": "/04.jpg",
+    "layout": "right"
+  }
+]

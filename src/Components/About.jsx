@@ -3,7 +3,7 @@ import AboutImg from '/about.jpg';
 
 function About() {
   return (
-    <section className="w-full h-screen flex items-center py-16 bg-gray-50 max-lg:h-full">
+    <section className="w-full h-screen px-24 max-xl:px-12 max-lg:px-6 flex items-center py-16 bg-gray-50 max-lg:h-full">
       <div className="w-full mx-auto flex flex-col md:flex-row items-center gap-6">
         <div className="w-full h-2/4 rounded-2xl p-10 max-lg:p-0 flex items-center justify-center">
           <img

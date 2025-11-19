@@ -3,7 +3,7 @@ import { ShoppingCart } from "lucide-react";
 
 function Offer() {
   return (
-    <div className="w-full py-10 flex items-center justify-center gap-10 max-lg:flex-col">
+    <div className="w-full py-10 px-24 max-xl:px-12 max-lg:px-6 flex items-center justify-center gap-10 max-lg:flex-col">
       <div className="w-[30%] flex flex-col items-start gap-4 max-lg:w-full max-lg:items-center">
         <h2 className="text-3xl font-bold text-center uppercase">
           What We Offer
