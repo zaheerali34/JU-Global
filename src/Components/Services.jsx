@@ -1,9 +1,10 @@
 import React from "react";
 import Data from "../utils/Data.json";
+import { motion } from "framer-motion";
 
 function Services() {
   return (
-    <div className="w-full h-full px-24 max-xl:px-12 max-lg:px-6 py-20 flex items-center justify-center flex-col ">
+    <div id="services" className="w-full h-full px-24 max-xl:px-12 max-lg:px-6 py-20 flex items-center justify-center flex-col ">
       <h1 className="text-3xl font-bold mb-4 text-zinc-900 text-center">OUR SERVICES</h1>
 
       <p className="w-full md:w-1/2 mb-8 text-center text-gray-600 text-lg md:text-xl">
@@ -13,7 +14,11 @@ function Services() {
 
       {Data.map((item) => {
         return (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
             key={item.id}
             className={`
               w-full max-w-6xl flex items-center justify-between gap-6 mt-14 
@@ -69,7 +74,7 @@ function Services() {
                 max-md:hidden
               "
             />
-          </div>
+          </motion.div>
         );
       })}
     </div>

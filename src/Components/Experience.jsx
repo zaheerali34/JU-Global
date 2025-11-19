@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import { motion } from "motion/react";
 
 const data = [
   {
@@ -33,35 +34,58 @@ const data = [
 
 function Experience() {
   return (
-    <div className="w-full h-screen max-lg:h-full py-20 px-4 bg-linear-to-b from-blue-700 to-blue-600 flex flex-col items-center">
-      
-      <h1 className="text-4xl font-bold text-white text-center">
+    <div
+      id="experience"
+      className="w-full h-screen max-lg:h-full py-20 px-4 bg-linear-to-b from-blue-700 to-blue-600 flex flex-col items-center"
+    >
+      <motion.h1
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="text-4xl font-bold text-white text-center"
+      >
         PROVEN EXPERIENCE
-      </h1>
-      <p className="text-blue-100 text-lg mt-2 text-center max-w-2xl">
-        Track record of successful partnerships across multiple industries and countries
-      </p>
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="text-blue-100 text-lg mt-2 text-center max-w-2xl"
+      >
+        Track record of successful partnerships across multiple industries and
+        countries
+      </motion.p>
 
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-6xl">
         {data.map((item, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.2 }}
+            viewport={{ once: true }}
             key={index}
             className="bg-[#4e79ddb4] hover:bg-[#5181f1] cursor-pointer backdrop-blur-lg shadow-xl rounded-2xl px-6 py-12 border border-blue-400/30 hover:shadow-2xl transition"
           >
             <div className="flex items-center gap-2 flex-wrap ">
               <CheckCircle className="text-green-300" size={22} />
-              <h2 className="text-white font-semibold text-xl">{item.country}</h2>
+              <h2 className="text-white font-semibold text-xl">
+                {item.country}
+              </h2>
               <span className="bg-blue-300 text-white px-3 py-1 rounded-full text-sm font-semibold">
                 {item.tag}
               </span>
             </div>
 
-            <p className="text-blue-200 mt-2 text-md font-semibold ml-7">{item.sector}</p>
+            <p className="text-blue-200 mt-2 text-md font-semibold ml-7">
+              {item.sector}
+            </p>
 
             <p className="text-blue-100 mt-4 leading-relaxed text-[15px] ml-7">
               {item.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
