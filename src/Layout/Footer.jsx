@@ -48,7 +48,7 @@ function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-blue-400"><Phone /></span>
-                <span>+86 189 1690 9892</span>
+                <span>+8613162555370</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-blue-400"><Mail /></span>
