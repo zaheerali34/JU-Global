@@ -1,14 +1,15 @@
 import React from 'react'
 import { Facebook, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+import Logo from '/logo.jpg';
 
 function Footer() {
   return (
-    <footer className="w-full bg-[#0f1724] text-gray-300 py-12 mt-40">
+    <footer className="w-full h-full bg-[#0f1724] text-gray-300 py-12 mt-40">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center text-black font-bold">JU</div>
+              <img src={Logo} alt="JU GLOBAL Logo" className='w-12 object-cover rounded-md shadow-2xl' />
               <span className="text-white font-semibold">JU GLOBAL</span>
             </div>
             <p className="text-gray-400 max-w-xs">Your trusted sourcing and trade service partner in China</p>

@@ -10,7 +10,8 @@ function Header() {
     { name: "Services", id: "services" },
     { name: "About", id: "about" },
     { name: "Experience", id: "experience" },
-    { name: "Why Choose Us", id: "whychooseus" }
+    { name: "Why Choose Us", id: "whychooseus" },
+    { name: "", id: "contact" }
   ];
 
   const headler = () => {
@@ -31,7 +32,7 @@ function Header() {
       animate={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
 
     className='w-full py-4 px-28 bg-[#ffffff88] drop-shadow-md fixed top-0 left-0 right-0 flex items-center justify-between z-50 max-lg:px-6 backdrop-blur-sm'>
-      <div className='flex items-center gap-4'>
+      <div  onClick={() => handleNavClick('home')} className='flex items-center gap-4'>
         <img src={Logo} alt="logo" className='w-[50px] cursor-pointer rounded-md' />
         <h1 className='text-[1.5rem] font-bold text-gray-800 cursor-pointer uppercase'>JU <span className='text-blue-500/70'>Global</span></h1>
       </div>
@@ -50,7 +51,7 @@ function Header() {
         </ul>
       </nav>
 
-      <button className='bg-blue-500 text-white px-6 py-3 hover:bg-blue-600 rounded-full cursor-pointer max-md:hidden'>Contact Us</button>
+      <button onClick={() => handleNavClick('contact')}  className='bg-blue-500 text-white px-6 py-3 hover:bg-blue-600 rounded-full cursor-pointer max-md:hidden'>Contact Us</button>
 
       <button onClick={headler} className='cursor-pointer hidden max-md:block'><TextAlignJustify /></button>
 
