@@ -1,5 +1,5 @@
 import React from "react";
-import HomeImg from "/1.webp";
+import HomeImg from "/Home.jpg";
 import { motion } from "motion/react";
 
 function Home() {

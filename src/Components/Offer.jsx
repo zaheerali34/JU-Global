@@ -1,5 +1,5 @@
 import React from "react";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Factory, Users  } from "lucide-react";
 import { motion } from "motion/react";
 
 function Offer() {
@@ -20,7 +20,7 @@ function Offer() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-zinc-500 text-center"
+          className="text-zinc-500"
         >
           Comprehensive sourcing and trade solutions tailored to your needs
         </motion.p>
@@ -34,8 +34,8 @@ function Offer() {
           viewport={{ once: true }}
           className="w-full h-full py-8 px-4 bg-white shadow-lg rounded-lg flex flex-col items-start gap-4 hover:scale-[1.05] transition-all duration-300 cursor-pointer hover:shadow-2xl"
         >
-          <ShoppingCart color="blue" size={32} />
-          <h2 className="text-[1.2rem] font-bold">International Trade</h2>
+          <ShoppingCart color="#2563EB" size={32} />
+          <h2 className="text-[1.2rem] font-bold pt-2">International Trade</h2>
           <h4 className="text-blue-500 font-bold text-[0.9rem]">
             Buying Agent Service
           </h4>
@@ -53,8 +53,8 @@ function Offer() {
           viewport={{ once: true }}
           className="w-full h-full py-8 px-4 bg-white shadow-lg rounded-lg flex flex-col items-start gap-4 hover:scale-[1.05] transition-all duration-300 cursor-pointer hover:shadow-2xl"
         >
-          <ShoppingCart color="blue" size={32} />
-          <h2 className="text-[1.2rem] font-bold">Factory Sourcing</h2>
+          <Factory color="#2563EB" size={32} />
+          <h2 className="text-[1.2rem] font-bold pt-2">Factory Sourcing</h2>
           <h4 className="text-blue-500 font-bold text-[0.9rem]">
             & Verification
           </h4>
@@ -72,8 +72,8 @@ function Offer() {
           viewport={{ once: true }}
           className="w-full h-full py-11 px-4 bg-white shadow-lg rounded-lg flex flex-col items-start gap-4 hover:scale-[1.05] transition-all duration-300 cursor-pointer hover:shadow-2xl"
         >
-          <ShoppingCart color="blue" size={32} />
-          <h2 className="text-[1.2rem] font-bold">B2B Business Matching</h2>
+          <Users color="#2563EB" size={32} />
+          <h2 className="text-[1.2rem] font-bold pt-2">B2B Business Matching</h2>
           <h4 className="text-blue-500 font-bold text-[0.9rem]">
             & Exhibition Assistance
           </h4>

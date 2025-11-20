@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TextAlignJustify } from 'lucide-react';
-import { motion } from "motion/react"
+import { motion } from "motion/react";
+import Logo from "/logo.jpg";
 
 function Header() {
   const [Menu, setMenu] = useState(false);
@@ -30,9 +31,12 @@ function Header() {
       animate={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
 
     className='w-full py-4 px-28 bg-[#ffffff88] drop-shadow-md fixed top-0 left-0 right-0 flex items-center justify-between z-50 max-lg:px-6 backdrop-blur-sm'>
-      <h1 className='text-2xl font-bold uppercase cursor-pointer'>My App</h1>
+      <div className='flex items-center gap-4'>
+        <img src={Logo} alt="logo" className='w-[50px] cursor-pointer rounded-md' />
+        <h1 className='text-[1.5rem] font-bold text-gray-800 cursor-pointer uppercase'>JU <span className='text-blue-500/70'>Global</span></h1>
+      </div>
 
-      <nav className='flex items-center gap-10 max-md:hidden'>
+      <nav className='flex items-center gap-10 max-xl:hidden'>
         <ul className='flex items-center gap-8 text-gray-800 cursor-pointer'>
           {links.map((item) => (
             <li
