@@ -27,17 +27,17 @@ function Header() {
   };
 
   return (
-    <motion.div 
+    <motion.header 
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
-
-    className='w-full py-4 px-28 bg-[#ffffff88] drop-shadow-md fixed top-0 left-0 right-0 flex items-center justify-between z-50 max-lg:px-6 backdrop-blur-sm'>
-      <div  onClick={() => handleNavClick('home')} className='flex items-center gap-4'>
+      className='w-[90%] py-4 px-10 bg-white drop-shadow-md fixed top-4 left-1/2 -translate-x-1/2 flex items-center justify-between z-50 max-lg:px-6 backdrop-blur-sm rounded-full'
+    >
+      <div onClick={() => handleNavClick('home')} className='flex items-center gap-4'>
         <img src={Logo} alt="logo" className='w-[50px] cursor-pointer rounded-md' />
         <h1 className='text-[1.5rem] font-bold text-gray-800 cursor-pointer uppercase'>JU <span className='text-blue-500/70'>Global</span></h1>
       </div>
 
-      <nav className='flex items-center gap-10 max-xl:hidden'>
+      <nav className='flex items-center gap-10 max-lg:hidden'>
         <ul className='flex items-center gap-8 text-gray-800 cursor-pointer'>
           {links.map((item) => (
             <li
@@ -51,9 +51,9 @@ function Header() {
         </ul>
       </nav>
 
-      <button onClick={() => handleNavClick('contact')}  className='bg-blue-500 text-white px-6 py-3 hover:bg-blue-600 rounded-full cursor-pointer max-md:hidden'>Contact Us</button>
+      <button onClick={() => handleNavClick('contact')} className='bg-blue-500 text-white px-6 py-3 hover:bg-blue-600 rounded-full cursor-pointer max-lg:hidden'>Contact Us</button>
 
-      <button onClick={headler} className='cursor-pointer hidden max-md:block'><TextAlignJustify /></button>
+      <button onClick={headler} className='cursor-pointer hidden max-xl:block'><TextAlignJustify /></button>
 
       {Menu && (
         <div className='w-full h-[30vh] py-2 px-6 bg-[#f1f4f8] fixed top-16 left-0 right-0 flex flex-col items-start justify-center gap-3 z-50'>
@@ -68,7 +68,7 @@ function Header() {
           ))}
         </div>
       )}
-    </motion.div>
+    </motion.header>
   );
 }
 
